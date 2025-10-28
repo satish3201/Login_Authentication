@@ -1,16 +1,68 @@
-# React + Vite
+    # React Authentication Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React-based user authentication interface including **Login**, **Register**, and **Protected Routes** using Context API and Axios.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* ✅ User Registration (Signup)
+* ✅ User Login with validation
+* ✅ Persistent Auth state (Context API)
+* ✅ Protected / Private Routes
+* ✅ Axios instance setup for API calls
+* ✅ Responsive UI
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React 18
+* React Router
+* Context API
+* Axios
+* Vite
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+# Clone repository
+git clone <your-repo-url>
+
+# Navigate to project
+cd your-project-folder
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+## 📁 Folder Structure
+
+```
+src/
+ ├── api/axios.js
+ ├── context/AuthProvider.jsx
+ ├── pages/
+ │    ├── Login.jsx
+ │    └── Register.jsx
+ ├── components/
+ │    └── ProtectedRoute.jsx
+ ├── App.jsx
+ └── main.jsx
+```
+
+## 🔐 Authentication Flow
+
+1. User enters login/signup details
+2. Axios sends request to backend
+3. Context stores user state (if success)
+4. Protected routes check login before rendering
+
+## ✅ Future Improvements
+
+* ✔ Password reset page
+* ✔ JWT token refresh
+* ✔ Google login (OAuth)
+* ✔ Better UI styling
+
+
+![Sign In Page Screenshot](./src/images/Screenshot%202025-10-28%20175336.png)
