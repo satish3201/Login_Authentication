@@ -65,4 +65,5 @@ src/
 * ✔ Better UI styling
 
 
-![Sign In Page Screenshot](./src/images/Screenshot%202025-10-28%20175336.png)
+![Login Page Screenshot](./src/images/Sign_In_page.png)
+![Register Page Screenshot](./src/images/Register_page.png)
