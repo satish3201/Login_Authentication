@@ -4,17 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 html {
     font-family: 'Nunito', sans-serif;
     font-size: 22px;
     color: #fff;
+    
 }
 
 body {
     min-height: 100vh;
-    background-color: dodgerblue;
+    background-image: url('./images/background.jpg');
+    background-repeat: round;
+    background-size: cover;
 }
 
 .App {
